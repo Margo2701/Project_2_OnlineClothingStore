@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1440px;
+}
+
+.center{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1170px;
+}
+
+/*Навигация: меню и опознавательный знак компании*/
+nav{
+    width: 100%;
+    max-width: 1170px;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 337px;
+}
+
+nav ul li{
+    list-style-type: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.05em;
+    color: #1d1c1f;
+}
+
+.logo{
+    text-transform: uppercase;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 69%;
+    color: #1d1c1f;    
+}
+
+.right-nav-items{
+    display: flex;
+    width: 408px;
+    justify-content: space-between;
+}
+
+.search-line{
+    display: flex;
+    align-items: center;
+}
+
+.search-line input{
+    width: 214px;
+    height: 43px;
+    border-radius: 21px;
+    border: 1px solid #e3e3e3;
+    background-color: #f5f5f5;
+    padding-left: 16px;
+}
+
+.search-line input[placeholder]{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #828282;
+}
+
+.search-line img{
+    margin-left: calc(-17.5px - 15.5px);
+}
+
+.buy-button{
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+}
+
+.login-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 114px;
+    height: 44px;
+    border-radius: 30px;
+    background-color: #274156; 
+    box-shadow: 0 3px 7px 0 rgba(39, 65, 86, 0.15);
+
+    text-decoration: none;
+}
+
+.login-button img{
+    width: 14px;
+    height: 18px;
+    padding-right: 8px;
+}
+
+.login-button p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+}
+
+/*Карусель*/
+
+.carousel{
+    width: 100%;
+    max-width: 1440px;
+    height: 690px;
+}
+
+.carousel img{
+    width: 100%;
+    max-width: 1440px;
+    height: 690px;
+    object-fit: cover;
+    object-position: center 13%;
+}
+
+.space-for-pages{
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    height: 50px;
+    justify-content: center;
+    align-items: end;
+
+    margin-top: -70px;
+}
+
+.pages{
+    display: flex;
+    width: 132px;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 20px;
+    background-color: #1d1c1f;
+    opacity: 0.8;   
+}
+
+.pages img{
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+.pages p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 131%;
+    color: #fff;
+}
+
+.pages p span{
+    font-weight: 700;
+}
+
+.space-for-backButton{
+    display: flex;
+    width: 100%;
+    max-width: 1440px;
+    justify-content: end;
+
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
+
+.go-back{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 43px;
+
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #274156;
+}
+
+@media screen and (max-width: 1220px) {
+    .center{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    
+    /*Навигация: меню и опознавательный знак компании*/
+    .right-nav-items{
+        justify-content: end;
+        width: 337px;
+    }
+
+    .buy-button{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    
+    .search-line input{
+        width: 150px;
+    }
+}
+
+@media screen and (min-width: 1021px){
+
+    /*Навигация: меню и опознавательный знак компании*/
+    .menu,
+    .button-for-search{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1020px) {
+    
+    /*Навигация: меню и опознавательный знак компании*/
+    nav ul{
+        display: none;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    .menu,
+    .right-nav-items,
+    .logo{
+        width: calc(100% / 3);
+    }
+
+    .logo{
+        text-align: center;
+    }
+
+    .search-line input,
+    .search-line img,
+    .login-button p{
+        display: none;
+    }
+
+    .login-button{
+        width: 43px;
+        height: 43px;
+        border: 2px solid #274156;
+    }
+
+    .login-button img,
+    .buy-button{
+        padding: 0;
+        margin: 0;
+    }
+
+    .button-for-search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 43px;
+        height: 43px;
+
+        cursor: pointer;
+    }
+
+    .buy-button{
+        justify-content: center;
+        width: 43px;
+        height: 43px;
+    }
+
+    .button-for-search,
+    .buy-button{
+        border-radius: 100%;
+        border: 2px solid #274156;
+        background-color: #f5f5f5;
+    }
+
+    .login-button,
+    .buy-button{
+        margin-left: 10px;
+    }
+
+    /*Карусель*/
+    .go-back{
+        margin-right: 20px;
+    }   
+
+}
+
+
+@media screen and (max-width: 680px) {
+    
+    /*Навигация: меню и опознавательный знак компании*/
+    .button-for-search,
+    .login-button{
+        display: none;
+    }
+
+    .buy-button{
+        border: 0;
+        background-color: rgba(39, 65, 86, 0);
+    }
+
+    /*Карусель*/
+    .space-for-backButton{
+        display: none;
+    }
+
+}
+
+
+@media screen and (max-width: 412px) {
+
+    .center{
+        width: 100%;
+        max-width: calc(412px - 40px);
+    }
+    
+    /*Навигация: меню и опознавательный знак компании*/
+    nav{
+        width: 100%;
+        max-width: calc(412px - 40px);
+        height: 60px;
+    }
+
+    .logo{
+        font-size: 20px;
+        line-height: 120%;
+    }
+
+    /*Карусель*/
+    .carousel{
+        width: 100%;
+        max-width: 412px;
+        height: 746px;
+    }
+    
+    .carousel img{
+        width: 100%;
+        max-width: 412px;
+        height: 746px;
+    }
+}
+
+@media screen and (max-width: 406px) {
+
+    .center{
+        width: 90%;
+    }
+}

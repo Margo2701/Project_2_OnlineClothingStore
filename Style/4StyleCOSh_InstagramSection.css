@@ -1,0 +1,217 @@
+.instagram-section{
+    width: 100%;
+    max-width: 1440px;
+    padding-top: 54px;
+    padding-bottom: 179px;
+
+    background-color: rgba(242, 237, 234, 0.6);
+}
+
+.center-title{
+    width: 100%;
+    max-width: 1440px;
+    text-align: center;
+}
+
+.center-title p:first-child{
+    font-family: 'Swagger TTF';
+    font-weight: 400;
+    font-size: 131px;
+    color: #1d1c1f;
+    opacity: 0.05;
+}
+
+.center-title p:last-child{
+    font-family: 'Noto Serif';
+    font-weight: 700;
+    font-size: 34px;
+    color: #1d1c1f;
+
+    margin-top: -100px;
+    margin-bottom: 87px;
+}
+
+.center-title p:last-child::before{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 1px;
+    margin-right: 40px;
+    background-color: #1d1c1f;
+}
+
+.center-title p:last-child::after{
+    content: '';
+    display: inline-block;
+    vertical-align: middle;
+    width: 30px;
+    height: 1px;
+    margin-left: 40px;
+    background-color: #1d1c1f;
+}
+
+.instagram-section .photo-gallery{
+    width: 100%;
+    max-width: 1170px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.instagram-section .photo-gallery .from-instagram{
+    width: 226px;
+    height: 228px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.instagram-section .photo-gallery .from-instagram>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*эффект при наведении*/
+.instagram-section .photo-gallery .hover-card{
+    position: relative;
+}
+
+.hover-thing{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(39, 65, 86, 0.7);
+    
+    opacity: 0;
+    transition: 0.5s;
+    padding: 0;
+}
+
+.hover-thing p{
+    font-family: 'Noto Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: -0.05em;
+    color: #fff;
+}
+
+.instagram-section .photo-gallery .hover-card:hover .hover-thing{
+    top: 0;
+    left: 0;
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .instagram-section .photo-gallery{
+        width: 90%;
+    }
+
+    .instagram-section .photo-gallery .from-instagram{
+        width: calc(50vw - 70px);
+        height: calc(50vw - 70px);
+    }
+
+    .instagram-section .photo-gallery .from-instagram:nth-child(3),
+    .instagram-section .photo-gallery .from-instagram:nth-child(4){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1050px){
+
+    .instagram-section .photo-gallery{
+        width: 100%;
+    }
+
+    .instagram-section .photo-gallery .from-instagram{
+        width: calc(50vw - 7px);
+        height: calc(50vw - 7px);
+    }
+
+
+    .instagram-section .photo-gallery .from-instagram:nth-child(7),
+    .instagram-section .photo-gallery .from-instagram:nth-child(8){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .instagram-section .photo-gallery .from-instagram:nth-child(5),
+    .instagram-section .photo-gallery .from-instagram:nth-child(6){
+        display: none;
+    }
+}
+
+@media screen and (min-width: 530px){
+    .instagram-section .center-title .hidden{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .instagram-section .photo-gallery .from-instagram{
+        width: 100vw;
+        height: 100vw;
+    }
+
+    .instagram-section .photo-gallery .from-instagram{
+        margin-bottom: 0px;
+    }
+
+    .instagram-section .photo-gallery .from-instagram:nth-child(9){
+        display: none;
+    }
+
+    .instagram-section{
+        padding-bottom: 0px;
+    }
+
+    .instagram-section .center-title p:last-child{
+       display: none;
+    }
+
+    .instagram-section .center-title .hidden{
+        font-family: 'Noto Serif';
+        font-weight: 700;
+        font-size: 34px;
+        color: #1d1c1f;
+    
+        margin-top: -100px;
+        margin-bottom: 87px;
+    }
+
+    .instagram-section .center-title .hidden::before{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 30px;
+        height: 1px;
+        margin-right: 20px;
+        background-color: #1d1c1f;
+    }
+
+    .instagram-section .center-title .hidden::after{
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        width: 30px;
+        height: 1px;
+        margin-left: 20px;
+        background-color: #1d1c1f;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .instagram-section .center-title .hidden::before,
+    .instagram-section .center-title .hidden::after{
+        width: 15px;
+    }
+}
