@@ -15,6 +15,39 @@
     max-width: 1170px;
 }
 
+/*Анимация*/
+
+nav ul li:nth-child(1).animate__shakeY{
+    animation-duration: 1.5s;
+}
+
+nav ul li:nth-child(2).animate__shakeY{
+    animation-delay: 1.5s;
+    animation-duration: 1.5s;
+}
+
+nav ul li:nth-child(3).animate__shakeY{
+    animation-delay: 3s;
+    animation-duration: 1.5s;
+}
+
+nav ul li:nth-child(4).animate__shakeY{
+    animation-delay: 4.5s;
+    animation-duration: 1.5s;
+}
+
+nav ul li:nth-child(5).animate__shakeY{
+    animation-delay: 6s;
+    animation-duration: 1.5s;
+}
+
+nav ul.animate__pulse{
+    animation-delay: 7.5s;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+
 /*Навигация: меню и опознавательный знак компании*/
 nav{
     width: 100%;
